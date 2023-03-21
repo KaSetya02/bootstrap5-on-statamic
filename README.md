@@ -102,3 +102,6 @@ require('./bootstrap');
 ```
 
 ## Jalankan Kembali Langkah No. 4 (npm run build)
+
+# Tampilan Aplikasi Hasil Deploy Fly.io
+https://fly-statamic-bio-bootstrap.fly.dev/
