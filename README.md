@@ -20,11 +20,11 @@ Statamic 3 is the flat-first, Laravel + Git powered CMS designed for building be
 - composer
 - Xampp/Laragon
 
-# Instalasi Bootsrap 5 Pada Laravel 9 
+# Instalasi Bootsrap 5 Pada Laravel Statamic 
 
-## 1. Create Project Laravel 9
+## 1. Create Project Statamic
 ```
-composer create-project laravel/laravel:^9.0 name_project
+statamic new name-project
 ```
 
 ## 2. Install Laravel UI Untuk Bootstrap 5:
@@ -36,9 +36,6 @@ composer require laravel/ui
 ```
 php artisan ui bootstrap
 ```
-```
-php artisan ui bootstrap --auth
-```
 
 ## 4. Install NPM Dan NPM Run Build Untuk Menjalankan Bootstrap 5
 ```
@@ -49,11 +46,6 @@ npm run build
 ```
 
 ## 5. Pasang/Tambahkan Source Dibawah Pada halaman yang akan menggunakan Bootstrap 5
-### Pada Laravel Biasa
-```
-@vite(['resources/sass/app.scss', 'resources/js/app.js'])
-```
-### Pada Project Statamic
 ```
 {{ vite src="resources/js/app.js|resources/sass/app.scss" }}
 ```
@@ -108,3 +100,5 @@ npm remove laravel-mix && rm webpack.mix.js
 ```
 require('./bootstrap');
 ```
+
+## Jalankan Kembali Langkah No. 4 (npm run build)
